@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purpleBackground"
+    android:clickable="true"
+    android:orientation="vertical"
+    tools:context=".EditProduct"
+    tools:showIn="@layout/activity_editproduct">
+
+    <!-- Barra de herramientas -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/purpleButtonBackground"
+        android:elevation="4dp"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <!-- Resto de la interfaz de usuario -->
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/editproducttitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="250dp"
+            android:layout_gravity="center"
+            android:text="@string/editproducttitulo"
+            android:textColor="@color/blueGrayStrongText"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="210dp"
+            android:layout_gravity="center"
+            android:text="@string/t_tulo"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/blueGrayStrongText"/>
+
+        <!-- CheckBoxes -->
+        <CheckBox
+            android:id="@+id/checkBoxOption1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="250dp"
+            android:layout_gravity="center"
+            android:text="@string/option_1" />
+
+        <CheckBox
+            android:id="@+id/checkBoxOption2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="140dp"
+            android:layout_marginBottom="250dp"
+            android:layout_marginStart="3dp"
+            android:layout_gravity="center"
+            android:text="@string/option_2" />
+
+        <CheckBox
+            android:id="@+id/checkBoxOption3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="180dp"
+            android:layout_marginBottom="250dp"
+            android:layout_marginEnd="25dp"
+            android:text="@string/option_3" />
+
+        <!-- boton para agregar texto -->
+        <CheckBox
+            android:id="@+id/checkBoxOption4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="220dp"
+            android:layout_marginEnd="23dp"
+            android:layout_marginBottom="250dp"
+            android:text="@string/option_4" />
+
+        <!-- oculto hasta que se seleccione el 4 -->
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtErrorOpc4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="290dp"
+            android:layout_marginBottom="250dp"
+            android:singleLine="true"
+            android:textColorHint="@color/blueGrayStrongText"
+            app:boxBackgroundColor="@color/purpleBackground">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextAdd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="290dp"
+                android:layout_marginBottom="5dp"
+                android:hint=""
+                android:inputType="text"
+                android:textSize="15sp"
+                android:visibility="gone" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/buttonNextProduct"
+            android:text="@string/buttonNextProduct"
+            android:layout_marginTop="360dp"
+            android:layout_marginBottom="300dp"
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="155dp"
+            android:layout_marginEnd="19dp"
+            android:backgroundTint="@color/purpleButtonBackground"
+            android:textColor="#607D8B"/>
+
+        <!-- Botón Back -->
+        <Button
+            android:id="@+id/buttonBack"
+            android:layout_marginTop="450dp"
+            android:layout_marginBottom="300dp"
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="155dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="19dp"
+            android:backgroundTint="@color/purpleButtonBackground"
+            android:onClick="fade"
+            android:text="@string/buttonBack"
+            android:textColor="#607D8B" />
+    </FrameLayout>
+</LinearLayout>
+

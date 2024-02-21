@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@+id/shopFragment">
+
+    <fragment
+        android:name="com.example.spectroom_app.ProfileFragment"
+        android:id="@+id/profileFragment"
+        android:label="ProfileFragment"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:name="com.example.spectroom_app.ShopFragment"
+        android:id="@+id/shopFragment"
+        android:label="ShopFragment"
+        tools:layout="@layout/fragment_shop" />
+    <fragment
+        android:name="com.example.spectroom_app.GetInTouchFragment"
+        android:id="@+id/getInTouchFragment"
+        android:label="GetInTouchFragment"
+        tools:layout="@layout/fragment_getintouch" />
+    <fragment
+        android:name="com.example.spectroom_app.LogoutFragment"
+        android:id="@+id/logoutFragment"
+        android:label="LogoutFragment"
+        tools:layout="@layout/fragment_logout" />
+
+</navigation>

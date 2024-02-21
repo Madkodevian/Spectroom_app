@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/purpleBackground"
+    tools:context=".GetInTouchFragment"
+    tools:showIn="@layout/fragment_getintouch"
+    android:focusable="true">
+
+    <!-- Título -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:textStyle="bold"
+        android:text="@string/title_contact"
+        android:textSize="20sp" />
+
+    <!-- Campo de Motivo -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtErrorMotivo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:inputType="text"
+        android:singleLine="true"
+        android:textColorHint="@color/blueGrayStrongText"
+        app:boxBackgroundColor="@color/pastelBlueBackground">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/motivoEditText"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="@string/motivo_hint"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textColorHint="#546E7A"
+            android:textSize="20sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Campo de Comentario -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtErrorComentario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:inputType="text"
+        android:singleLine="true"
+        android:textColorHint="@color/blueGrayStrongText"
+        app:boxBackgroundColor="@color/pastelBlueBackground">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/comentarioEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/comentario_hint"
+            android:inputType="textMultiLine"
+            android:minLines="3"
+            android:textColorHint="#546E7A"
+            android:textSize="16sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Botón de Enviar -->
+    <Button
+        android:id="@+id/enviarButton"
+        android:layout_marginTop="360dp"
+        android:layout_marginBottom="300dp"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/purpleButtonBackground"
+        android:text="@string/boton_enviar"
+        android:textColor="#607D8B" />
+
+</LinearLayout>

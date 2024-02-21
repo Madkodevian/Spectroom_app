@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="txtErrorName1" type="id"/>
+    <item name="name1" type="id"/>
+
+    <item name="imagenLogo2" type="id"/>
+    <item name="buttonNext" type="id"/>
+    <item name="txtErrorEmail" type="id"/>
+    <item name="userEmail" type="id"/>
+    <item name="txtErrorAddPassword" type="id"/>
+    <item name="addPassword" type="id"/>
+    <item name="repeatPassword" type="id"/>
+    <item name="buttonSignIn" type="id"/>
+    <item name="txtErrorFirstSurname" type="id"/>
+    <item name="txtErrorRepeatPassword" type="id"/>
+    <item name="firstSurname" type="id"/>
+    <item name="txtErrorSecondSurname" type="id"/>
+    <item name="secondSurname" type="id"/>
+    <item name="txtErrorAddress" type="id"/>
+    <item name="address" type="id"/>
+    <item name="txtErrorName" type="id"/>
+    <item name="userNameGetInTouch" type="id"/>
+    <item name="userEmailGetInTouch" type="id"/>
+    <item name="buttonBack" type="id"/>
+    <item name="appbar" type="id"/>
+    <item name="toolbar" type="id"/>
+    <item name="drawer_layout" type="id"/>
+    <item name="navigation_view" type="id"/>
+    <item name="imagenLogo" type="id"/>
+    <item name="lblTitulo" type="id"/>
+    <item name="lblSubTitulo" type="id"/>
+    <item name="container" type="id"/>
+    <item name="registrar" type="id"/>
+    <item name="txtErrorPassword" type="id"/>
+    <item name="userPassword" type="id"/>
+    <item name="parrafoInicial" type="id"/>
+    <item name="iniciarSesion" type="id"/>
+    <item name="buttonWithoutLogin" type="id"/>
+    <item name="guideline2" type="id"/>
+    <item name="login" type="id"/>
+    <item name="buttonUpdate" type="id"/>
+    <item name="buttonMove" type="id"/>
+    <item name="buttonRemove" type="id"/>
+    <item name="RecViewListItem" type="id"/>
+    <item name="mnuOpc1Profile" type="id"/>
+    <item name="mnuOpc2Shop" type="id"/>
+    <item name="mnuOpc3GetInTouch" type="id"/>
+
+    <!-- container -->
+    <item name="fragment_container" type="id"/>
+
+    <!-- Textview buyitems -->
+    <item name="textViewProductTitle" type="id" />
+    <item name="textViewOption1" type="id" />
+    <item name="textViewOption2" type="id" />
+    <item name="textViewOption3" type="id" />
+    <item name="textViewOption4" type="id" />
+    <item name="textViewTextOption4" type="id" />
+
+</resources>

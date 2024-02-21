@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="LblEtiqueta" type="id" />
+    <item name="editTextAdd" type="id" />
+    <item name="textViewOpcion4" type="id" />
+    <item name="buttonBackToProfile" type="id" />
+</resources>

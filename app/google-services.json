@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "342977894558",
+    "firebase_url": "https://spectroom-c8d5c-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "spectroom-c8d5c",
+    "storage_bucket": "spectroom-c8d5c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:342977894558:android:f87b5485668acfd344c38f",
+        "android_client_info": {
+          "package_name": "com.example.spectroom_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3sQnChg77zg4lyhYO8hL_aKIJVW7A7WM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

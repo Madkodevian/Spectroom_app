@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <!-- TextView para el título del elemento seleccionado -->
+    <TextView
+        android:id="@+id/tvDialogTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:paddingBottom="8dp"/>
+
+    <!-- TextView para el subtítulo del elemento seleccionado -->
+    <TextView
+        android:id="@+id/tvDialogSubtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvDialogTitle"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:paddingBottom="8dp"/>
+
+    <!-- ImageButton para el botón de cerrar (X) -->
+    <ImageButton
+        android:id="@+id/btnClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/ic_close" />
+
+    <!-- Agrega un espacio entre el subtítulo y los detalles adicionales -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_below="@id/tvDialogSubtitle"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Agrega vistas para los detalles adicionales del elemento -->
+    <TextView
+        android:id="@+id/tvOption1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvDialogSubtitle"
+        android:text="@string/opcion_1" />
+
+    <TextView
+        android:id="@+id/tvOption2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvOption1"
+        android:text="@string/opcion_2" />
+
+    <TextView
+        android:id="@+id/tvOption3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvOption2"
+        android:text="@string/opcion_3" />
+
+    <TextView
+        android:id="@+id/tvOption4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvOption3"
+        android:text="@string/opcion_4" />
+
+</RelativeLayout>
